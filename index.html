@@ -6,10 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star wars</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <img src="img/logo.png" alt="Logo Star Wars" id="logo-startwars" onclick="Clicavel()">
+    <section id="home" class="content-default bg-img--version1">
+        <div class="container content-center--all">
+            <div>
+                <img src="img/logo.png" alt="Logo Star Wars" id="logo-startwars" onclick="Clicavel()">
+                <h1> Seja bem vindo, Jovem Padawan! </h1>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="content-default bg-img--version2">
+        <div class="container content-center--all">
+            <div>
+                <h1>Formulário de contato</h1>
+                <div>
+                    <form id="contact-form">
+                        <input type="text" id="name" name="name" placeholder="Seu nome">
+                        <input type="email" id="email" name="email" placeholder="Seu email">
+                        <button type="submit"> Enviar </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="content-left-main">
+        <a href="#home">
+            <img src="img/vader.png" width="180px" height="auto" alt="">
+        </a>
+        <a href="#contato">
+            <img src="img/yoda.png" width="180px" height="auto" alt="">
+        </a>
     </div>
 </body>
 <script src="script/script.js"></script>

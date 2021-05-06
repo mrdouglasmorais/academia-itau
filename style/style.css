@@ -1,14 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background-image: url('../img/bg.jpeg');
-    background-repeat: repeat;
-    background-size: cover;
+    background-color: black;
+    color: #fff;
+    font-family: 'New Tegomin', serif;
 }
 
 .container{
     max-width: 80%;
-    height: 100vh;
-    margin: auto;
-    display: flex;
+    margin: 0 auto;
 }
 
 .container img{
@@ -16,4 +23,35 @@ body{
     height: auto;
     margin: auto;
     cursor: pointer;
+}
+
+.content-default{
+    height: 100vh;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content-center--all{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-img--version1{
+    background-image: url('../img/storm.jpeg');
+}
+
+.bg-img--version2{
+    background-image: url('../img/storm2.jpeg');
+}
+
+.content-left-main{
+    position: fixed;
+    display: grid;
+    left: 0;
+    top: 30%;
 }
